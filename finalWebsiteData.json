@@ -1,0 +1,13 @@
+{
+  "finalWebsiteData": [
+    {
+      "businessName": "Joseph Plumbing Services",
+      "city": "{\"ownerName\": \"Unknown\", \"ownerConfidence\": 0, \"servicesMentioned\": [\"water heater\", \"leak repair\", \"plumbing problem\", \"dishwasher installation\", \"sewer pipe repair\", \"pipe cleaning\"], \"firstReviewDate\": \"2021-12-27\", \"last30\": 0, \"last60\": 0, \"last90\": 2, \"last180\": 3, \"last365\": 8}",
+      "state": "https://al-plumbers-site.vercel.app/?place_id=ChIJ_fxawXWASCAR1P2unkbAX94",
+      "postalCode": "Plumber",
+      "phone": "+1 251-607-8760",
+      "rating": "5",
+      "reviewsCount": "0"
+    }
+  ]
+}
