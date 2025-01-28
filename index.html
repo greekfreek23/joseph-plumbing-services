@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title id="dynamic-title">Best Alabama Plumber</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts (Poppins) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome 6.5.1 -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://alplumberssitevercelapp.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='https://cdn.matomo.cloud/alplumberssitevercelapp.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+
+</head>
+
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-section">
+      <img src="" alt="Anything Plumbing Logo" class="logo" data-logo />
+    </div>
+    <div class="contact-bar">
+      <a href="tel:" class="contact-item phone-link">
+        <i class="fas fa-phone"></i>
+        <span data-phone></span>
+      </a>
+      <a href="mailto:" class="contact-item email-link">
+        <i class="fas fa-envelope"></i>
+        <span data-email></span>
+      </a>
+    </div>
+    <nav class="navbar">
+      <span class="hamburger"><i class="fas fa-bars"></i></span>
+      <ul class="nav-list">
+        <li><a href="#heroSection">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reviewsSection">Reviews</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#contactForm">Contact</a></li>
+        <li>
+          <a href="#reviewsSection" class="nav-item rating-link">
+            Rating: <span data-rating></span>★ (<span data-reviews></span> Reviews)
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <div class="hero" id="heroSection">
+    <div class="slides">
+      <div class="slide active" data-hero-image="0">
+        <div class="hero-overlay">
+          <p class="hero-desc" data-hero-cta="0"></p>
+          <a href="tel:" class="hero-cta">
+            <i class="fas fa-phone"></i>
+            <strong><span data-phone></span></strong>
+          </a>
+        </div>
+      </div>
+      <div class="slide" data-hero-image="1">
+        <div class="hero-overlay">
+          <p class="hero-desc" data-hero-cta="1"></p>
+          <a href="tel:" class="hero-cta">
+            <i class="fas fa-phone"></i>
+            <strong><span data-phone></span></strong>
+          </a>
+        </div>
+      </div>
+      <div class="slide" data-hero-image="2">
+        <div class="hero-overlay">
+          <p class="hero-desc" data-hero-cta="2"></p>
+          <a href="tel:" class="hero-cta">
+            <i class="fas fa-phone"></i>
+            <strong><span data-phone></span></strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT US SECTION -->
+  <section class="about-us-section" id="about-us">
+    <div class="about-container">
+      <!-- Slider container for images (populated by JS using data-about-slider) -->
+      <div class="about-image" data-about-slider>
+        <!-- The JS will create .slide elements with .active class rotating -->
+      </div>
+      <!-- Text container -->
+      <div class="about-text">
+        <h2 class="about-heading">About <span data-business-name></span></h2>
+        <p class="about-description" data-about-content></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services-section" id="services">
+    <h2 class="service-heading">Expert Solutions by <span data-business-name></span></h2>
+    <div class="services-grid">
+      <div class="service-box">
+        <div class="icon-container">
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <h3>24/7 Emergency Service</h3>
+        <p>Immediate response to all plumbing emergencies. Available day or night.</p>
+        <a href="tel:" class="call-btn" data-phone>
+          <i class="fas fa-phone"></i> Call Now
+        </a>
+      </div>
+      <div class="service-box">
+        <div class="icon-container">
+          <i class="fas fa-home"></i>
+        </div>
+        <h3>Residential Plumbing</h3>
+        <p>Complete home plumbing solutions from repairs to remodels.</p>
+        <a href="tel:" class="call-btn" data-phone>
+          <i class="fas fa-phone"></i> Call Now
+        </a>
+      </div>
+      <div class="service-box">
+        <div class="icon-container">
+          <i class="fas fa-shower"></i>
+        </div>
+        <h3>Drain Cleaning</h3>
+        <p>Professional drain cleaning and maintenance. Keep drains flowing smoothly.</p>
+        <a href="tel:" class="call-btn" data-phone>
+          <i class="fas fa-phone"></i> Call Now
+        </a>
+      </div>
+      <div class="service-box">
+        <div class="icon-container">
+          <i class="fas fa-fire"></i>
+        </div>
+        <h3>Water Heater Services</h3>
+        <p>Installation, repair, and maintenance of all water heater types.</p>
+        <a href="tel:" class="call-btn" data-phone>
+          <i class="fas fa-phone"></i> Call Now
+        </a>
+      </div>
+      <div class="service-box">
+        <div class="icon-container">
+          <i class="fas fa-wrench"></i>
+        </div>
+        <h3>Repairs & Installation</h3>
+        <p>Quality-guaranteed repairs and new installations by licensed professionals.</p>
+        <a href="tel:" class="call-btn" data-phone>
+          <i class="fas fa-phone"></i> Call Now
+        </a>
+      </div>
+      <div class="service-box">
+        <div class="icon-container">
+          <i class="fas fa-tint"></i>
+        </div>
+        <h3>Leak Detection</h3>
+        <p>Advanced technology to locate and repair hidden leaks quickly.</p>
+        <a href="tel:" class="call-btn" data-phone>
+          <i class="fas fa-phone"></i> Call Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS SECTION -->
+  <section class="reviews-section" id="reviewsSection">
+    <h2 class="reviews-header">Hear From Our Customers</h2>
+    <div class="rating-info">
+      <div class="rating-stars">★★★★★</div>
+      <div class="rating-text">
+        <span data-business-name></span> maintains a 
+        <span data-rating></span>-star rating with 
+        <span data-review-count></span> satisfied customer reviews.
+      </div>
+    </div>
+    <div class="reviews-slider">
+      <div class="reviews-track" id="reviewsTrack">
+        <!-- Populated via JS -->
+      </div>
+    </div>
+    <div class="leave-review-container">
+      <a href="#" class="review-button" data-reviewlink>Leave Us a Review</a>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="form-header">
+      <img src="" alt="Anything Plumbing Logo" class="form-logo" style="width:150px;height:150px;" data-logo />
+      <p class="form-description">
+        Need a quote? Fill out the form below or call 
+        <strong>
+          <a href="tel:" data-phone style="color:var(--accent-color); font-weight:bold;"></a>
+        </strong>
+        for immediate assistance.
+      </p>
+    </div>
+    <div class="form-container" id="contactForm">
+      <form>
+        <div class="form-group">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-input" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Phone</label>
+          <input type="tel" class="form-input" placeholder="Enter your phone number" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" placeholder="Enter your email address" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Service Needed</label>
+          <select class="form-select" required>
+            <option value="">Select a Service</option>
+            <option value="emergency">24/7 Emergency</option>
+            <option value="residential">Residential Plumbing</option>
+            <option value="drain">Drain Cleaning</option>
+            <option value="heater">Water Heater</option>
+            <option value="repairs">Repairs & Installation</option>
+            <option value="leak">Leak Detection</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Describe your request..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>
+          <span data-business-name></span> - licensed, bonded, insured, proudly serving <span data-city></span>.
+        </p>
+        <p>
+          Address: <span data-street></span>, <span data-city></span>, 
+          <span data-state></span> <span data-zip></span>
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p><strong><span data-phone></span></strong></p>
+        <p><strong><span data-email></span></strong></p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-nav-list">
+          <li><a href="#heroSection">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#reviewsSection">Reviews</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#contactForm">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section social-icons">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 <span data-business-name></span>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Optional Chat Script -->
+  <script 
+    src="https://widgets.leadconnectorhq.com/loader.js" 
+    data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+    data-widget-id="YOUR-CHAT-WIDGET-ID"
+    async>
+  </script>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+

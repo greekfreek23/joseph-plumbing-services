@@ -11,10 +11,13 @@
   };
 
   // Get place_id parameter from URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const placeId = urlParams.get('place_id');
   
-  
-  
-  
+  if(!placeId) {
+    console.warn("No ?place_id= provided in URL. Page won't populate data.");
+    return;
+  }
 
   const WEBSITE_DATA_URL = "https://raw.githubusercontent.com/greekfreek23/alabamaplumbersnowebsite/main/finalWebsiteData.json";
   const PHOTO_DATA_URL = "https://raw.githubusercontent.com/greekfreek23/alabamaplumbersnowebsite/main/data/businessPhotoContent.json";
@@ -32,7 +35,7 @@
   ])
     .then(([websiteData, photoData]) => {
       const businesses = websiteData.finalWebsiteData || [];
-      const business = businesses.find(b => true /* no placeId */);
+      const business = businesses.find(b => b.siteId === placeId);
       
       if(!business) {
         throw new Error(`No matching business found for: ${placeId}`);
@@ -375,7 +378,7 @@
 
       const starEl = document.createElement("div");
       starEl.className = "review-stars";
-      starEl.textContent = "?????"; // Ideally, this should reflect the actual rating
+      starEl.textContent = "★★★★★"; // Ideally, this should reflect the actual rating
 
       const textEl = document.createElement("p");
       textEl.className = "review-text";

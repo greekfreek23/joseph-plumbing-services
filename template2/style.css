@@ -1,0 +1,74 @@
+/* General reset */
+body, table {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Main table layout */
+.main-table {
+  width: 100%;
+  max-width: 980px;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.content-table {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.logo-section {
+  width: 150px;
+  text-align: center;
+  background-color: #000;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.info-section {
+  background-color: #B9CFFF;
+  padding: 20px;
+}
+
+.info-section h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.info-section .tagline {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.info-section .features {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.info-section .license {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contact-section {
+  text-align: left;
+  background-color: #B9CFFF;
+  padding: 20px;
+}
+
+.contact-section p {
+  margin: 5px 0;
+}
+
+.contact-section .address {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
